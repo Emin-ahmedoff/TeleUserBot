@@ -36,7 +36,7 @@
 
 ### 🇹🇷 Elle Kurulum / Manual Setup 🇺🇲
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SiriUserBot/SiriUserBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Tele-UserBot/Tele-UserBot)
 
 ## 🇹🇷 Bilgilendirme / İnformation 🇺🇲
 ***Herhangi bir istek & şikâyet & öneri varsa [destek grubuna](https://t.me/SiriSupport) ulaşabilirsiniz.***
