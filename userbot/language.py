@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# SiriUserBot - Berceste
+# TeleUserBot - Berceste
 
 from . import LANGUAGE, LOGS, bot, PLUGIN_CHANNEL_ID
 from json import loads, JSONDecodeError
@@ -16,7 +16,7 @@ LOGS.info("Dil dosyası yükleniyor...")
 LANGUAGE_JSON = None
 
 for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
-    if ((len(dil.file.name.split(".")) >= 2) and (dil.file.name.split(".")[1] == "sirijson")):
+    if ((len(dil.file.name.split(".")) >= 2) and (dil.file.name.split(".")[1] == "telejson")):
         if path.isfile(f"./userbot/language/{dil.file.name}"):
             try:
                 LANGUAGE_JSON = loads(open(f"./userbot/language/{dil.file.name}", "r").read())
@@ -24,9 +24,9 @@ for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
                 dil.delete()
                 remove(f"./userbot/language/{dil.file.name}")
 
-                if path.isfile("./userbot/language/DEFAULT.sirijson"):
+                if path.isfile("./userbot/language/DEFAULT.telejson"):
                     LOGS.warn("Varsayılan dil dosyası kullanılıyor...")
-                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.sirijson", "r").read())
+                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.telejson", "r").read())
                 else:
                     raise Exception("Your language file is invalid")
         else:
@@ -35,7 +35,7 @@ for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
                 LANGUAGE_JSON = loads(open(DOSYA, "r").read())
             except JSONDecodeError:
                 dil.delete()
-                if path.isfile("./userbot/language/DEFAULT.sirijson"):
+                if path.isfile("./userbot/language/DEFAULT.telejson"):
                     LOGS.warn("Varsayılan dil dosyası kullanılıyor...")
                     LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.sirijson", "r").read())
                 else:
@@ -45,7 +45,7 @@ for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
 if LANGUAGE_JSON == None:
     if path.isfile(f"./userbot/language/{LANGUAGE}.sirijson"):
         try:
-            LANGUAGE_JSON = loads(open(f"./userbot/language/{LANGUAGE}.sirijson", "r").read())
+            LANGUAGE_JSON = loads(open(f"./userbot/language/{LANGUAGE}.telejson", "r").read())
         except JSONDecodeError:
             raise Exception("Invalid json file")
     else:
