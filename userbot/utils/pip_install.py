@@ -1,4 +1,4 @@
-# SiriUserBot - Pip Install
+# TeleUserBot - Pip Install
 
 #Credit: sandy1709
 
