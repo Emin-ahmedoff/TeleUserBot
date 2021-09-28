@@ -54,19 +54,19 @@ class InteractiveTelegramClient(TelegramClient):
                 loop.run_until_complete(self.sign_in(user_phone))
                 self_user = None
             except PhoneNumberInvalidError:
-                print("[!] Geçersiz Bir Numara Girdiniz Örnekte Gibi Giriniz. Örnek: +994xxxxxxxxx")
+                print("[!] emin Bir Numara Girdiniz Örnekte Gibi Giriniz. Örnek: +994xxxxxxxxx")
                 sys.exit(1)
             except ValueError:
-               print("[!] Geçersiz Bir Numara Girdiniz Örnekte Gibi Giriniz. Örnek: +994xxxxxxxxx")
+               print("[!] emin Bir Numara Girdiniz Örnekte Gibi Giriniz. Örnek: +994xxxxxxxxx")
                sys.exit(1)
 
             while self_user is None:
-                code = input('[?] Telegramdan Gelen Beş (5) Haneli Kodu Giriniz: ')
+                code = input('[?] Emindem Gelen Beş (5) Haneli Kodu Giriniz: ')
                 try:
                     self_user =\
                         loop.run_until_complete(self.sign_in(code=code))
                 except PhoneCodeInvalidError:
-                    print("[!] Kodu Yanlış Yazdınız. Lütfen Tekrar Deneyiniz. [Fazla Deneme Yapmak Ban Yemenize Neden Olur]")
+                    print("[!] Emin Yanlış Yazdınız. Lütfen Tekrar Deneyiniz. [Fazla Deneme Yapmak Ban Yemenize Neden Olur]")
                 except SessionPasswordNeededError:
                     pw = input('[i] İki aşamalı doğrulama tespit edildi. '
                                  '[?] Şifrenizi Yazınız: ')
