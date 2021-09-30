@@ -1,6 +1,10 @@
-# ÜÇ YAZILIMCI BİNDİK BİR GEMİYE GİDİYORUZ İLERİYE
-FROM teleuserbot/teleuserbot:latest
-RUN git clone https://github.com/Emin-ahmedoff/TeleUserBot /root/TeleUserBot
-WORKDIR /root/TeleUserBot/
-RUN pip3 install -r requirements.txt
-CMD ["python3", "main.py"]  
+# thx friday | please give credit | do not delete this line#
+
+FROM python:3.9
+WORKDIR .
+ENV PYTHONUNBUFFERED=1
+COPY requirements.txt .
+COPY startup.sh .
+RUN bash startup.sh
+COPY . .
+CMD ["python3", "main.py"]
