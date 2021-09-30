@@ -10,7 +10,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ErdemBey1/SiriUserBot",
+  "repository": "https://github.com/Emin-ahmedoff/TeleUserBot",
   "website":   "https://t.me/Codlar",
   "success_url": "https://t.me/SiriChat",
   "stack": "container",
@@ -59,7 +59,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Fork sağlamanız durumunda repo URL'nizi buraya ekleyin. Varsayılan olarak kendi repo adresimiz eklidir.",
-      "value": "https://github.com/ErdemBey1/SiriUserBot",
+      "value": "https://github.com/Emin-ahmedoff/TeleUserBot",
       "required": true
     },
     "COUNTRY": {
