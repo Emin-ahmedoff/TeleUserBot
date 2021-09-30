@@ -30,13 +30,13 @@ import re
 import userbot.cmdhelp
 
 ALIVE_MSG = [
-    "`Userbotunuz çalışalı şu kadar oluyor:` **{worktime}** ❤️",
-    "🎆 `Endişelenme! Seninleyim.` **{sirisahip}**, `userbot çalışıyor.`",
-    "`⛈️ Yeni gibi görünüyor!`, **{sirisahip}:3**",
-    "✨ `Userbot sahibinin emirlerine hazır...`",
-    "`Huh!` **{sirisahip}** `beni çağırıyor 🍰 < bu senin için 🥺..`",
-    "{mention} **Siri Senin İçin Çalışıyor✨**",
-    "{username}, `SiriOT {worktime} zamandır çalışıyor...`\n——————————————\n**Telethon sürümü :** `{telethon}`\n**Userbot sürümü  :** `{siri}`\n**Python sürümü    :** `{python}`\n**Plugin sayısı :** `{plugin}`\n——————————————\n**Emrine amadeyim dostum... 😇**"
+    "`Userbotunuz1 çalışalı şu kadar oluyor:` **{worktime}** ❤️",
+    "🎆 `Endişelenme2! Seninleyim.` **{sirisahip}**, `userbot çalışıyor.`",
+    "`⛈️ Yeni gib3i görünüyor!`, **{sirisahip}:3**",
+    "✨ `Userb4ot sahibinin emirlerine hazır...`",
+    "`Huh!` **{s5irisahip}** `beni çağırıyor 🍰 < bu senin için 🥺..`",
+    "{mention} **Si6ri Senin İçin Çalışıyor✨**",
+    "{username}, `S7iriOT {worktime} zamandır çalışıyor...`\n——————————————\n**Telethon sürümü :** `{telethon}`\n**Userbot sürümü  :** `{siri}`\n**Python sürümü    :** `{python}`\n**Plugin sayısı :** `{plugin}`\n——————————————\n**Emrine amadeyim dostum... 😇**"
 ]
 
 DIZCILIK_STR = [
@@ -286,11 +286,11 @@ for module_name in ALL_MODULES:
 os.system("clear")
 
 LOGS.info("+===========================================================+")
-LOGS.info("|                     ✨Siri Userbot✨                       |")
+LOGS.info("|                     ✨Tele Userbot✨                       |")
 LOGS.info("+==============+==============+==============+==============+")
 LOGS.info("|                                                            |")
-LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
-          " Yardıma İhtiyacınız varsa, Destek grubumuza gelin t.me/SiriSupport")
+LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test Emin edin."
+          " Yardıma İhtiyacınız varsa, Destek grubumuza gelin t.me/teleSupport")
 LOGS.info(f"Bot versiyonunuz: Siri {SIRI_VERSION}")
 
 """
